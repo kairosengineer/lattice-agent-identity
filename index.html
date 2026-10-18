@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#161616" />
+    <meta name="description" content="Identity Workspace mock landing page." />
+    <title>Lattice Identity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="rail" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Lattice Identity home"><span></span><b>lattice</b></a>
+        <nav>
+          <a class="nav-item active" href="#home"><span class="icon grid"></span><span>Overview</span></a>
+          <a class="nav-item" href="#workspace"><span class="icon users"></span><span>Identities</span></a>
+          <a class="nav-item" href="#workspace"><span class="icon key"></span><span>Access</span></a>
+          <a class="nav-item" href="#workspace"><span class="icon activity"></span><span>Activity</span></a>
+        </nav>
+        <div class="rail-footer"><span class="avatar">HY</span><span class="online">System ready</span></div>
+      </aside>
+      <main id="home">
+        <header class="topbar"><div class="crumb"><span>Identity</span><i>/</i><strong>Workspace</strong></div><div class="top-actions"><button class="icon-button" aria-label="Notifications">⌁</button><button class="help" type="button">Help</button></div></header>
+        <section class="hero" aria-labelledby="page-title">
+          <p class="eyebrow">LATTICE IDENTITY <span></span> WORKSTATION</p>
+          <h1 id="page-title">Your identity,<br /><em>ready for work.</em></h1>
+          <p class="lede">A focused workspace for provisioning access, managing credentials, and moving securely between the tools that matter.</p>
+          <div class="cta-row">
+            <button id="download-button" class="button button-primary" type="button"><span class="button-symbol">↓</span> Download Identity CLI <span class="arrow">→</span></button>
+            <button id="launch-button" class="button button-secondary" type="button">Launch Identity Workspace <span class="arrow">↗</span></button>
+          </div>
+          <p class="compatibility"><span class="status-dot"></span> CLI v1.8.0 &nbsp;•&nbsp; macOS, Linux &amp; Windows</p>
+        </section>
+        <section class="status-panel" aria-label="Workspace status">
+          <div class="panel-heading"><span>Workspace status</span><small>LIVE</small></div>
+          <div class="status-grid">
+            <div><p>IDENTITY PROVIDER</p><strong><span class="green-dot"></span> Connected</strong></div>
+            <div><p>ACTIVE CONTEXT</p><strong>Production <span class="chevron">⌄</span></strong></div>
+            <div><p>LAST SYNCHRONIZED</p><strong>Just now</strong></div>
+            <div class="terminal-card"><span>$</span> identity status <i>— authenticated</i></div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <dialog id="workspace-dialog">
+      <div class="dialog-heading"><span class="brand-mark"></span><button id="close-dialog" aria-label="Close workspace">×</button></div>
+      <p class="eyebrow">IDENTITY WORKSPACE</p><h2>Workspace launch is ready.</h2>
+      <p>In the production application, this button would open the authenticated Identity Workspace. This mock keeps the interaction local.</p>
+      <button id="continue-button" class="button button-primary" type="button">Continue to workspace <span class="arrow">→</span></button>
+    </dialog>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
