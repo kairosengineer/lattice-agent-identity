@@ -1,0 +1,8 @@
+[submodule "workstations"]
+	path = workstations
+	url = https://github.com/autonomy-cloud/workstations.git
+	branch = UI-chenges
+[submodule "identity"]
+	path = identity
+	url = https://github.com/autonomy-cloud/identity.git
+	branch = codex/add-workstations-service
